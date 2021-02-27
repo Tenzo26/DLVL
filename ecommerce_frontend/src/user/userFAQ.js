@@ -10,6 +10,7 @@ const { Panel } = Collapse;
 
 const userFAQ = () => {
 	const [faq, setFaq] = useState([]);
+		
 
 	useEffect(() => {
 		const fetchFaq = async () => {
@@ -27,8 +28,13 @@ const userFAQ = () => {
 
 	const renderFaq = () => {
 		return faq.map((item) => (
-			<Panel header={item.title} key={item.id}>
+			<Panel
+			 header={item.title}
+			
+			key={item.id}>
+				
 				<p>{item.content}</p>
+				
 			</Panel>
 		));
 	};
@@ -40,7 +46,9 @@ const userFAQ = () => {
 			className="container-fluid"
 		>
 			<Collapse defaultActiveKey={["0"]}>{renderFaq()}</Collapse>
+			
 		</Layout>
+		
 	);
 };
 

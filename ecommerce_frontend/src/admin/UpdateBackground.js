@@ -106,7 +106,7 @@ const UpdateBackground = ({ match }) => {
 		);
 
 	return (
-		<Layout title="Update Background" description={`G'day ${user.name}.`}>
+		<Layout title="Update Background" description={`Hello! ${user.name}.`}>
 			<div className="row">
 				<div className="col-md-8 offset-md-2">
 					{showLoading()}

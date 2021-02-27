@@ -5,6 +5,7 @@ import { isAuthenticated } from "../auth";
 
 const { Column } = Table;
 
+
 function FeedbackTable({ data, onUpdate, onDelete }) {
 	const {
 		user: { _id },

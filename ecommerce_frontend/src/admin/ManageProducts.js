@@ -56,9 +56,14 @@ const ManageProducts = () => {
                         </td>
                         <td>
                             <Link to = {`/admin/product/update/${product._id}`}>
-                                    <span className = "badge badge-warning badge-pill">
+                                    <button 
+                                    style={{
+									backgroundColor: "#52c41a",
+									color: "#fff",
+								}}
+                                    className = "badge badge-warning badge-pill">
                                         Update
-                                    </span>
+                                    </button>
                                 </Link>
                         </td>
                         <td>
@@ -91,4 +96,5 @@ const ManageProducts = () => {
 };
 
 export default ManageProducts;
+
 

@@ -74,7 +74,7 @@ const userFeedback = () => {
 	return (
 		<Layout
 			title="Feedbacks"
-			description={` Welcome to Feedback page `}
+			description={` Welcome to the Feedback page `}
 			className="container-fluid"
 		>
 			<div className="userFeedback">
@@ -210,7 +210,10 @@ const FeedbackForm = () => {
 	return (
 		<Form form={form} layout="horizontal" onFinish={onFinish}>
 			<Form.Item
-				name="feedback"
+				style={{
+				marginTop: 16,
+				}}
+				name="Feedback"
 				label="Feedback"
 				labelCol={{
 					span: 6,
@@ -220,9 +223,9 @@ const FeedbackForm = () => {
 				}}
 			>
 				<TextArea rows={6} />
-			</Form.Item>
+		</Form.Item>
 
-			<Form.Item
+		<Form.Item
 				wrapperCol={{
 					span: 14,
 					offset: 6,

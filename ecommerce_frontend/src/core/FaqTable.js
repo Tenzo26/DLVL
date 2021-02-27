@@ -111,23 +111,23 @@ function FaqTable() {
 
 	const columns = [
 		{
-			title: "title",
+			title: "Title",
 			dataIndex: "title",
 			editable: true,
 		},
 		{
-			title: "content",
+			title: "Content",
 			dataIndex: "content",
 			editable: true,
 		},
 
 		{
-			title: "operation",
+			title: "Command",
 			dataIndex: "operation",
 			render: (_, record) =>
 				dataSource.length >= 1 ? (
 					<Popconfirm
-						title="Sure to delete?"
+						title="Is that your final answer?"
 						onConfirm={() => handleDelete(record.key)}
 					>
 						<Button type="danger">Delete</Button>
@@ -213,7 +213,7 @@ function FaqTable() {
 						marginBottom: 16,
 					}}
 				>
-					Add a row
+					Add Content
 				</Button>
 			</Form>
 
